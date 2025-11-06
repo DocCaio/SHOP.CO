@@ -1,0 +1,11 @@
+:root {
+     --ff: "Roboto", sans-serif;
+}
+
+
+.container h2 {
+    font-family: var(--ff);
+    font-weight: bold;
+    font-size: 48px;
+}
+

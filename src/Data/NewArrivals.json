@@ -1,0 +1,26 @@
+[
+  {
+    "image": "../assets/NewArrivals/black.png",
+    "name": "T-SHIRT WITH TAPE DETAILS",
+    "price": 120,
+    "cursos": ["Engenharia", "Ciência"]
+  },
+  {
+    "image": "../assets/NewArrivals/jeans.png",
+    "name": "SKINNY FIT JEANS",
+    "price": 240,
+    "cursos": ["Engenharia", "Ciência"]
+  },
+  {
+    "image": "../assets/NewArrivals/long.png",
+    "name": "CHECKERED SHIRT",
+    "price": 180,
+    "cursos": ["Engenharia", "Ciência"]
+  },
+  {
+    "image": "../assets/NewArrivals/orange.png",
+    "name": "SLEEVE STRIPED T-SHIRT",
+    "price": 130,
+    "cursos": ["Engenharia", "Ciência"]
+  }
+]

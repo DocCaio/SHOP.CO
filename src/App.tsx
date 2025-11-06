@@ -1,17 +1,23 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import './App.css'
+import Home from "./Pages/Home";
+
+import ErrorPage from "./Pages/ErrorPage";
+
+import "./App.css";
 
 function App() {
-  
-
   return (
-    <>
-      <div>
-        
-      </div>
+    <BrowserRouter>
+     
+        <Routes>
+          <Route path="/" element={<Home />} />
+         
+          <Route path="*" element={<ErrorPage/>} />
+        </Routes>
       
-    </>
-  )
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
