@@ -3,24 +3,24 @@
     "id": 1,
     "image": "/assets/TopSelling/long.png",
     "name": "VERTICAL STRIPED SHIRT",
-    "price": 120
+    "price": 212
   },
   {
     "id": 2,
     "image": "/assets/TopSelling/orange.png",
     "name": "COURAGE GRAPHIC T-SHIRT",
-    "price": 240
+    "price": 145
   },
   {
     "id": 3,
     "image": "/assets/TopSelling/short.png",
     "name": "LOOSE FIT BERMUDA SHORTS",
-    "price": 180
+    "price": 80
   },
   {
     "id": 4,
     "image": "/assets/TopSelling/pant.png",
     "name": "FADED SKINNY JEANS",
-    "price": 130
+    "price": 210
   }
 ]

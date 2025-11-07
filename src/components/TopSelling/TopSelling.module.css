@@ -1,0 +1,16 @@
+:root {
+     --ff: "Roboto", sans-serif;
+     --card-bg-color:#F0EEED
+}
+
+
+.container h2 {
+    font-family: var(--ff);
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.container img {
+    background-color: var(--card-bg-color);
+}
+

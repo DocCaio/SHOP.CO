@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "./assets/NewArrivals/black.png",
+    "image": "/assets/NewArrivals/jeans.png",
     "name": "T-SHIRT WITH TAPE DETAILS",
     "price": 120
   },
