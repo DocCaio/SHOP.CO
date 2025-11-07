@@ -1,8 +1,12 @@
+import NewArrivals from "../NewArrivals";
 
 
 const Main = () => {
   return (
-    <div>index</div>
+    <div>
+      <NewArrivals/>
+
+    </div>
   )
 }
 
