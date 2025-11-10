@@ -1,0 +1,157 @@
+.container {  
+    padding: 2rem 1rem;
+    background-color: #F8F8F8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+    border-top: 1px solid #EEE;
+}
+
+/* ============================
+   ABOUT SECTION
+============================ */
+.about {   
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 100%;
+}
+
+.about img {    
+    height: 30px;
+    width: auto;
+}
+
+.about p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.social {    
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.social i {
+    color: #333;
+    cursor: pointer;
+}
+
+/* ============================
+   LINKS SECTION
+============================ */
+.links {    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 15px; /* linha e coluna */
+}
+
+.links h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.links div ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links li {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.links li:hover {
+    color: #000;
+}
+
+/* ============================
+   COPY & PAYMENT SECTION
+============================ */
+.copy {
+    order: 10; 
+    font-size: 0.85rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+.payments {   
+    display: flex;
+    gap: 2px;
+    flex-wrap: wrap;
+    order: 9; 
+}
+
+.payments img {
+    width: auto;
+    opacity: 0.9;
+}
+
+/* ============================
+   TABLET (>=768px)
+============================ */
+@media (min-width: 768px) {
+
+    .container {      
+        padding: 3rem 2rem;
+    }
+
+    .container > :not(.copy, .payments) {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 30px; 
+    }
+
+    .about {
+        max-width: 250px; 
+    }
+
+    .links {        
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1; 
+        justify-content: flex-end; 
+        gap: 40px;
+    }
+
+    .container > :nth-last-child(-n + 2) { 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-top: 20px;
+        border-top: 1px solid #DDD;
+        margin-top: 10px;
+    }
+
+    .copy, .payments {
+        order: initial; 
+    }
+}
+
+/* ============================
+   DESKTOP (>=1024px)
+============================ */
+@media (min-width: 1024px) {
+    .container {
+        padding: 4rem 5rem;
+    }
+
+    .about {
+        max-width: 300px; 
+    }
+
+    .links {
+        gap: 50px;
+    }
+}
