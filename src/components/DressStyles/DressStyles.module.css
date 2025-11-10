@@ -1,0 +1,86 @@
+:root {
+  --bg-container: #f0f0f0;
+  --text-color: #222;
+  --accent-color: #ff6b6b;
+}
+
+
+.container {
+  background-color: var(--bg-container);
+  color: var(--text-color);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 330px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* ====== CARD ====== */
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.label {
+  margin-top: 0.75rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1239px;
+    padding: 3rem;
+    height: 866px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
