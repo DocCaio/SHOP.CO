@@ -1,0 +1,137 @@
+:root {
+  --text-color-links: #000;
+  --primary-color: #111;
+  --border-color: #ccc;
+  --hover-color: #f5f5f5;
+}
+
+/* CONTAINER GERAL */
+.container {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+}
+
+.logoArea {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* MENU LINKS */
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.menu a {
+  color: var(--text-color-links);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.menu a:hover {
+  color: var(--primary-color);
+}
+
+/* 🔍 INPUT DE BUSCA ESTILIZADO */
+.search {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search i {
+  position: absolute;
+  left: 10px;
+  color: #888;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.search input {
+  padding: 8px 12px 8px 35px; /* espaço para o ícone */
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.3s ease;
+  width: 180px;
+  background-color: #fafafa;
+}
+
+.search input:focus {
+  border-color: var(--primary-color);
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.search input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* ICONES CARRINHO E USUARIO */
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.3rem;
+  color: var(--text-color-links);
+}
+
+.icons i {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.icons i:hover {
+  color: var(--primary-color);
+}
+
+/* HAMBURGER BUTTON */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 200px;
+    height: 100vh;
+    background-color: #fff;
+    flex-direction: column;
+    padding-top: 60px;
+    gap: 20px;
+    transition: left 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .showMenu {
+    left: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .search {
+    display: none;
+  }
+}

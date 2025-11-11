@@ -6,27 +6,31 @@
     --spacing-lg: 24px;
 }
 
-
-.container {  
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
+/* O fundo ocupa 100% da tela */
+.container {
+    width: 100%;
     background-color: var(--primary-bg);
-    padding: var(--spacing-lg); 
-    text-align: center;
-    flex-direction: column-reverse;
 }
 
+/* Wrapper interno que centraliza o conteúdo */
+.inner {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    padding: var(--spacing-lg);
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-.container > div {   
+/* Bloco de texto */
+.inner > div {   
     width: 100%;
     max-width: 500px; 
     padding: var(--spacing-lg) 0;
-    order: 2;
 }
 
-
-.container h1 {
+.inner h1 {
     font-family: var(--ff);
     font-weight: 900; 
     font-size: 2.5rem; 
@@ -35,8 +39,7 @@
     color: #333;
 }
 
-
-.container p {
+.inner p {
     font-family: var(--ff);
     font-size: 1rem;
     line-height: 1.5;
@@ -44,8 +47,8 @@
     margin-bottom: var(--spacing-lg);
 }
 
-
-.container a {
+/* Botão/link */
+.inner a {
     display: block; 
     width: 80%;
     max-width: 250px;
@@ -57,80 +60,71 @@
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
-
     transition: background-color 0.3s ease;
 }
 
-.container a:hover {
+.inner a:hover {
     background-color: #333; 
 }
 
-
-.container > div img {
+/* Imagem de “sells” */
+.inner > div img {
     margin-top: 10px;
     max-width: 150px; 
     height: auto;
 }
 
-
-.container figure {
+/* Figura principal */
+.inner figure {
     width: 100%;
-    order: 1; 
     margin: 0;
 }
 
-.container figure img {
+.inner figure img {
     width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 10px; 
 }
 
+/* ============================= */
+/*      RESPONSIVE - DESKTOP     */
+/* ============================= */
 
 @media (min-width: 768px) {
-    .container {
+    .inner {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        max-width: 1200px;
-        margin: 0 auto; 
         padding: var(--spacing-xl);
     }
 
-  
-    .container > div {
-        order: 1;
+    .inner > div {
         text-align: left;
         padding-right: var(--spacing-xl);
         flex: 1; 
     }
 
-   
-    .container figure {
-        order: 2; 
+    .inner figure {
         flex: 1; 
         max-width: 50%; 
     }
 
-    
-    .container h1 {
+    .inner h1 {
         font-size: 3.5rem; 
     }
     
-    .container p {
+    .inner p {
         font-size: 1.1rem;
     }
 
-    
-    .container a {
+    .inner a {
         display: inline-block;
         margin: 0;        
         padding: 18px 40px; 
-      
     }
 
-  
-    .container > div img {
+    .inner > div img {
         margin-top: var(--spacing-lg);
         margin-left: var(--spacing-lg); 
         max-width: 200px; 
