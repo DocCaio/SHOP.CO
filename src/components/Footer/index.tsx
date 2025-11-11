@@ -66,7 +66,9 @@ const Footer = () => {
         ))}
       </div>
 
-      
+      <div>
+
+              
 
       <span className={styles.copy}>
         Shop.co © 2000–2025, All Rights Reserved
@@ -78,6 +80,10 @@ const Footer = () => {
           <img key={index} src={pay.src} alt={pay.alt} />
         ))}
       </div>
+
+      </div>
+
+
 
       
     </footer>
