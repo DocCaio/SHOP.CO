@@ -1,17 +1,10 @@
 import styles from "./TopSelling.module.css";
-
-import cardsData from "../../Data/TopSelling.json";
-
+import cardsData from "../../mocks/TopSelling.json";
 import type { Card } from "../../Types/card";
+import { formatPrice } from "../../utils/formatPrice";
 import type React from "react";
 
-const formatPrice = (price: number): string => {
-  return new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-    minimumFractionDigits: 0,
-  }).format(price);
-};
+
 
 const TopSelling: React.FC = () => {
   return (

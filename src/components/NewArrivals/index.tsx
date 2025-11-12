@@ -1,16 +1,11 @@
 import styles from "./NewArrivals.module.css";
-import cardsData from "../../Data/NewArrivals.json";
+import cardsData from "../../mocks/NewArrivals.json";
 import type React from "react";
 import type { Card } from "../../Types/card";
+import { formatPrice } from "../../utils/formatPrice";
 
 
-const formatPrice = (price: number): string => {
-  return new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-    minimumFractionDigits: 0,
-  }).format(price);
-};
+
 
 const NewArrivals: React.FC = () => {
   return (
