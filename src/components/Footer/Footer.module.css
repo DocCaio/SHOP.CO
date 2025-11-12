@@ -1,22 +1,30 @@
-.container {  
-    padding: 2rem 1rem;
+
+.footerBackground {
     background-color: #F8F8F8;
-    color: #333;
+    width: 100%;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
-    gap: 30px; 
+    gap: 30px;
+    color: #333;
     border-top: 1px solid #EEE;
+    box-sizing: border-box;
 }
 
 
-.about {   
+.about {
     display: flex;
     flex-direction: column;
     gap: 15px;
     max-width: 100%;
 }
 
-.about img {    
+.about img {
     height: 25px;
     width: 150px;
 }
@@ -27,21 +35,27 @@
     line-height: 1.5;
 }
 
-.social {    
+.social {
     display: flex;
     gap: 1rem;
     font-size: 1.5rem;
 }
 
-.social i {
+.social a {
     color: #333;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.links {    
+.social a:hover {
+    color: #000;
+}
+
+
+.links {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px 15px; /* linha e coluna */
+    gap: 25px 15px;
 }
 
 .links h4 {
@@ -51,7 +65,7 @@
     color: #000;
 }
 
-.links div ul {
+.links ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -68,68 +82,65 @@
     color: #000;
 }
 
-
-.copy {
-    order: 10; 
-    font-size: 0.85rem;
-    color: #777;
-    margin-top: 10px;
+.bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.payments {   
+.copy {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+
+.payments {
     display: flex;
-    gap: 2px;
+    gap: 8px;
     flex-wrap: wrap;
-    order: 9; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .payments img {
-    width: auto;
+    height: 45px;
     opacity: 0.9;
 }
 
 
 @media (min-width: 768px) {
-
-    .container {      
+    .container {
         padding: 3rem 2rem;
     }
 
-    .container > :not(.copy, .payments) {
+    .container > :not(.bottom) {
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
         width: 100%;
-        margin-bottom: 30px; 
+        margin-bottom: 30px;
     }
 
     .about {
-        max-width: 250px; 
+        max-width: 250px;
     }
 
-    .links {        
+    .links {
         display: flex;
-        flex-direction: row;
-        flex-grow: 1; 
-        justify-content: flex-end; 
+        flex-grow: 1;
+        justify-content: flex-end;
         gap: 40px;
     }
 
-    .container > :nth-last-child(-n + 2) { 
-        display: flex;
+    .bottom {
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
         padding-top: 20px;
         border-top: 1px solid #DDD;
-        margin-top: 10px;
-    }
-
-    .copy, .payments {
-        order: initial; 
     }
 }
-
 
 @media (min-width: 1024px) {
     .container {
@@ -137,7 +148,7 @@
     }
 
     .about {
-        max-width: 300px; 
+        max-width: 300px;
     }
 
     .links {
