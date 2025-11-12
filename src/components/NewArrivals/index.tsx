@@ -7,7 +7,7 @@ import type { Card } from "../../Types/card";
 const formatPrice = (price: number): string => {
   return new Intl.NumberFormat("en-US", {
     style: "currency",
-    currency: "USD", 
+    currency: "USD",
     minimumFractionDigits: 0,
   }).format(price);
 };
@@ -18,10 +18,10 @@ const NewArrivals: React.FC = () => {
       <h2>New Arrivals</h2>
 
       <div className={styles.cards}>
-        
+
         {cardsData.map((card: Card) => (
           <div key={card.id} className={styles.card}>
-   
+
             <img
               src={card.image}
               alt={card.name}
@@ -29,10 +29,15 @@ const NewArrivals: React.FC = () => {
               loading="lazy"
             />
             <h3>{card.name}</h3>
-          
-            <span className={styles.price}>
+
+            <div>
+              <span className={styles.price}>
                 {formatPrice(card.price)}
-            </span>
+              </span>
+              <i className="bi bi-cart2"></i>
+            </div>
+
+
           </div>
         ))}
       </div>

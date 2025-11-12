@@ -6,13 +6,13 @@
     --spacing-lg: 24px;
 }
 
-/* O fundo ocupa 100% da tela */
+
 .container {
     width: 100%;
     background-color: var(--primary-bg);
 }
 
-/* Wrapper interno que centraliza o conteúdo */
+
 .inner {
     display: flex;
     flex-direction: column-reverse;
@@ -23,7 +23,7 @@
     margin: 0 auto;
 }
 
-/* Bloco de texto */
+
 .inner > div {   
     width: 100%;
     max-width: 500px; 
@@ -47,7 +47,7 @@
     margin-bottom: var(--spacing-lg);
 }
 
-/* Botão/link */
+
 .inner a {
     display: block; 
     width: 80%;
@@ -67,14 +67,14 @@
     background-color: #333; 
 }
 
-/* Imagem de “sells” */
+
 .inner > div img {
     margin-top: 10px;
-    max-width: 150px; 
+    max-width: 250px; 
     height: auto;
 }
 
-/* Figura principal */
+
 .inner figure {
     width: 100%;
     margin: 0;
@@ -86,10 +86,6 @@
     object-fit: cover;
     border-radius: 10px; 
 }
-
-/* ============================= */
-/*      RESPONSIVE - DESKTOP     */
-/* ============================= */
 
 @media (min-width: 768px) {
     .inner {
@@ -125,8 +121,7 @@
     }
 
     .inner > div img {
-        margin-top: var(--spacing-lg);
-        margin-left: var(--spacing-lg); 
-        max-width: 200px; 
+        margin-top: var(--spacing-lg);               
+        max-width: 450px; 
     }
 }

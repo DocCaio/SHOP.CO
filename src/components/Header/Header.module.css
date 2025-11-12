@@ -5,31 +5,45 @@
   --hover-color: #f5f5f5;
 }
 
-/* CONTAINER GERAL */
+
 .container {
   width: 100%;
   background-color: #fff;
   border-bottom: 1px solid var(--border-color);
 }
 
+
+.wrapper {
+  max-width: 1200px;  
+  margin: 0 auto;    
+  padding: 0 30px;   
+}
+
+
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 20px;
+  gap: 20px;
+  padding: 12px 0;
 }
 
 .logoArea {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
 }
 
-/* MENU LINKS */
+.logo {
+  height: 20px;
+}
+
+
 .menu {
   display: flex;
+  align-items: center;
   list-style: none;
-  gap: 20px;
+  gap: 25px;
 }
 
 .menu a {
@@ -43,49 +57,50 @@
   color: var(--primary-color);
 }
 
-/* 🔍 INPUT DE BUSCA ESTILIZADO */
+
+.centerArea {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
 .search {
   display: flex;
   align-items: center;
   position: relative;
+  width: 100%;
+  max-width: 320px;
 }
 
 .search i {
   position: absolute;
-  left: 10px;
+  left: 12px;
   color: #888;
-  font-size: 1rem;
-  transition: color 0.2s ease;
+  font-size: 1.1rem;
 }
 
 .search input {
-  padding: 8px 12px 8px 35px; /* espaço para o ícone */
+  width: 100%;
+  padding: 10px 14px 10px 40px;
   border: 1px solid var(--border-color);
-  border-radius: 20px;
-  font-size: 0.95rem;
+  border-radius: 25px;
+  font-size: 1rem;
   outline: none;
-  transition: all 0.3s ease;
-  width: 180px;
   background-color: #fafafa;
+  transition: all 0.3s ease;
 }
 
 .search input:focus {
   border-color: var(--primary-color);
   background-color: #fff;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
 }
 
-.search input::placeholder {
-  color: #aaa;
-  font-style: italic;
-}
-
-/* ICONES CARRINHO E USUARIO */
 .icons {
   display: flex;
   align-items: center;
-  gap: 15px;
-  font-size: 1.3rem;
+  gap: 18px;
+  font-size: 1.5rem;
   color: var(--text-color-links);
 }
 
@@ -98,7 +113,6 @@
   color: var(--primary-color);
 }
 
-/* HAMBURGER BUTTON */
 .hamburger {
   display: none;
   background: none;
@@ -107,7 +121,7 @@
   cursor: pointer;
 }
 
-/* RESPONSIVO */
+
 @media (max-width: 768px) {
   .menu {
     position: fixed;
@@ -131,7 +145,7 @@
     display: block;
   }
 
-  .search {
+  .centerArea {
     display: none;
   }
 }

@@ -8,9 +8,7 @@
     border-top: 1px solid #EEE;
 }
 
-/* ============================
-   ABOUT SECTION
-============================ */
+
 .about {   
     display: flex;
     flex-direction: column;
@@ -19,8 +17,8 @@
 }
 
 .about img {    
-    height: 30px;
-    width: auto;
+    height: 25px;
+    width: 150px;
 }
 
 .about p {
@@ -40,9 +38,6 @@
     cursor: pointer;
 }
 
-/* ============================
-   LINKS SECTION
-============================ */
 .links {    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -73,9 +68,7 @@
     color: #000;
 }
 
-/* ============================
-   COPY & PAYMENT SECTION
-============================ */
+
 .copy {
     order: 10; 
     font-size: 0.85rem;
@@ -95,9 +88,7 @@
     opacity: 0.9;
 }
 
-/* ============================
-   TABLET (>=768px)
-============================ */
+
 @media (min-width: 768px) {
 
     .container {      
@@ -139,9 +130,7 @@
     }
 }
 
-/* ============================
-   DESKTOP (>=1024px)
-============================ */
+
 @media (min-width: 1024px) {
     .container {
         padding: 4rem 5rem;
