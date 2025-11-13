@@ -7,8 +7,8 @@ import Main from "../../components/Main";
 const Home = () => {
   return (
     <div>      
-      <Banner />
-      <ContainerBrands />
+      <Banner/>
+      <ContainerBrands/>
       <Main/>     
     </div>
   )

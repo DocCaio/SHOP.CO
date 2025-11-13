@@ -1,0 +1,27 @@
+:root {
+    --bg-btn:#000;
+    --color-txt-btn:#fff;
+    --bg-container:#F9FAFC
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--bg-container);
+}
+
+.container img {
+  width: 800px;
+  margin-top: 1rem;
+}
+
+.container a {
+    background-color: var(--bg-btn);
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    text-decoration: none;
+    color:var(--color-txt-btn) ;
+
+}

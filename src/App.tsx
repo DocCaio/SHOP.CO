@@ -8,6 +8,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Payments from "./Pages/Payments";
+import Newsletter from "./components/Newsletter";
 
 function App() {
   return (
@@ -18,8 +19,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/" element={<Payments />} />
           <Route path="*" element={<ErrorPage />} />
-        </Routes>
+        </Routes>        
       </main>
+       <Newsletter/>
       <Footer />
     </BrowserRouter>
   );
