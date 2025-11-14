@@ -7,11 +7,22 @@
   color: #333;
 }
 
+.bounce {
+  animation: bounce .4s ease;
+}
+
+@keyframes bounce {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.3); }
+  60% { transform: scale(0.9); }
+  100% { transform: scale(1); }
+}
+
 .badge {
   position: absolute;
   top: -6px;
   right: -6px;
-  background: #ff4d4d;
+  background: red;
   color: white;
   padding: 2px 6px;
   border-radius: 50%;
