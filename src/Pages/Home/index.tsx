@@ -1,4 +1,5 @@
 import Banner from "../../components/Banner"
+import Cart from "../../components/Cart";
 import ContainerBrands from "../../components/ContainerBrands"
 
 import Main from "../../components/Main";
@@ -6,7 +7,8 @@ import Main from "../../components/Main";
 
 const Home = () => {
   return (
-    <div>      
+    <div>     
+       <Cart /> 
       <Banner/>
       <ContainerBrands/>
       <Main/>     

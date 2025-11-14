@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "./Header.module.css";
 import logo from "../../assets/Header/logo.png";
 import { Link } from "react-router-dom";
+import Button from "../Button";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,7 +34,7 @@ const Header = () => {
           </div>
 
           <div className={styles.icons}>
-            <i className="bi bi-cart2"></i>
+            <Button />            
             <i className="bi bi-person-circle"></i>
             <button className={styles.hamburger} onClick={toggleMenu}>
               <i className="bi bi-list"></i>
