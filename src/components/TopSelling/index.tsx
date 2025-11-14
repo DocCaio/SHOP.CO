@@ -4,14 +4,9 @@ import cardsData from "../../Data/TopSelling.json";
 
 import type { Card } from "../../Types/card";
 import type React from "react";
+import {formatPrice} from "../../utils/formatPrice";
 
-const formatPrice = (price: number): string => {
-  return new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-    minimumFractionDigits: 0,
-  }).format(price);
-};
+
 
 const TopSelling: React.FC = () => {
   return (

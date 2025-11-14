@@ -7,15 +7,15 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-    errorElement: <Page404 />, 
+    errorElement: <Page404/>, 
     children: [
       {
         index: true, 
-        element: <Home />,
+        element: <Home/>,
       },
       {
         path: "payments",
-        element: <Payments />,
+        element: <Payments/>,
       },
     ],
   },
