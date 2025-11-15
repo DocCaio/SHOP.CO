@@ -1,6 +1,7 @@
 import { useCart } from "../../context/CartContext";
 import styles from "./Cart.module.css";
 import { formatPrice } from "../../utils/formatPrice";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const { cart, totalPrice, isOpen, closeCart, removeFromCart, increaseQty, decreaseQty, clearCart } = useCart();
@@ -40,10 +41,14 @@ const Cart = () => {
         <>
           <hr />
           <h3>Total: {formatPrice(totalPrice)}</h3>
+          
+        
 
           <button className={styles.clearBtn} onClick={clearCart}>
             Clear Cart
           </button>
+
+          <Link className={styles.payBtn} to={"/Payments"}>Pay</Link>
         </>
       )}
     </aside>
