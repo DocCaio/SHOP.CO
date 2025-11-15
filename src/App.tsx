@@ -9,10 +9,12 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Payments from "./Pages/Payments";
 import Newsletter from "./components/Newsletter";
+import { CouponSection } from "./components/CouponSection";
 
 function App() {
   return (
     <BrowserRouter>
+      <CouponSection/>
       <Header />
       <main>
         <Routes>
