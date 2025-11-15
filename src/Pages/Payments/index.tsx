@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useCart } from "../../context/CartContext";
 import { formatPrice } from "../../utils/formatPrice";
+import FinishBtn from "../../components/FinishBtn";
 
 const Payments: React.FC = () => {
   const { cart, totalPrice } = useCart();
@@ -15,14 +16,15 @@ const Payments: React.FC = () => {
       setError("");
     } else {
       setDiscount(0);
-      setError("Coupon inválido.");
+      setError("Invalid coupon.");
     }
   };
 
   const finalTotal = totalPrice - totalPrice * discount;
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div style={{ padding: "20px" ,  maxWidth: "1200px",    
+        margin: "40px auto", backgroundColor:"#F9FAFC"}}>
       <h1>Order Summary</h1>
 
      
@@ -45,7 +47,7 @@ const Payments: React.FC = () => {
 
         <input
           type="text"
-          placeholder="Digite seu cupom"
+          placeholder="Type the Coupon"
           value={coupon}
           onChange={(e) => setCoupon(e.target.value)}
           style={{
@@ -56,7 +58,9 @@ const Payments: React.FC = () => {
           }}
         />
 
-        <button onClick={applyCoupon} style={{ padding: "8px 12px" }}>
+        <button onClick={applyCoupon} style={{ padding: "8px 12px", 
+          cursor:"pointer"
+          , backgroundColor:"#000", color:"#fff" }}>
           Apply
         </button>
 
@@ -75,9 +79,11 @@ const Payments: React.FC = () => {
 
             <h2>
               Final Total: <strong>{formatPrice(finalTotal)}</strong>
-            </h2>
+            </h2>                    
+            
           </>
         )}
+         <FinishBtn/>  
       </div>
     </div>
   );
