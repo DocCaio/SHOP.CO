@@ -20,7 +20,7 @@ React (with TypeScript) ⚛️
 
 Vite for development and bundling 🚀
 
-Bootstrap for UI components and layout 🎨
+Bootstrap  and Css for UI components and layout 🎨
 
 React Router DOM for navigation 🔗
 
