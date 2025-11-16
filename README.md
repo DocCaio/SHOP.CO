@@ -28,6 +28,8 @@ PNPM for package management 📦
 
 ## 🖼️ Screenshot
 
+<img src="public/print.png" atl="print"/>
+
 
 
 ## Setup Instructions ⚙️
