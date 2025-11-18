@@ -6,10 +6,11 @@ import ErrorPage from "./Pages/ErrorPage";
 
 import "./App.css";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
+
 import Payments from "./Pages/Payments";
 import Newsletter from "./components/Newsletter";
 import { CouponSection } from "./components/CouponSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
         </Routes>        
       </main>
        <Newsletter/>
-      <Footer />
+       <Footer/>
     </BrowserRouter>
   );
 }
