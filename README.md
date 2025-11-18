@@ -1,73 +1,73 @@
-# React + TypeScript + Vite
+## E-Commerce Project 🛒
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple e-commerce website built with React (using TypeScript), Vite, Bootstrap, and React Router DOM. The application allows users to choose clothes 👚👗, add them to their cart 🛍️, view individual item prices 💰, and see the total price of all selected items. It also includes the ability to empty the cart 🗑️, apply discount coupons 🎉, and proceed to the payment page 💳 with all purchase details.
 
-Currently, two official plugins are available:
+## Features 🌟
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Browse Products: Users can choose clothes and add them to their shopping cart 🛒.
 
-## React Compiler
+View Prices: Displays individual prices for selected items and the total price 💸.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Empty Cart: Option to clear the cart if the user changes their mind 🧹.
 
-## Expanding the ESLint configuration
+Discount Coupons: Users can apply a coupon code for discounts 💲.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Checkout Page: When the user clicks "Pay," they are redirected to a new page with all the purchase details 📄.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Technologies Used 🛠️
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+React (with TypeScript) ⚛️
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Vite for development and bundling 🚀
+
+Bootstrap  and Css for UI components and layout 🎨
+
+React Router DOM for navigation 🔗
+
+PNPM for package management 📦
+
+## 🖼️ Screenshot
+
+<img src="public/print.png" atl="print"/>
+
+
+
+## Setup Instructions ⚙️
+### Prerequisites 📝
+
+Make sure you have Node.js and PNPM installed on your machine. You can check if you have them installed by running the following commands:
+Install dependencies using pnpm:
+
+
+
+```Bash
+
+pnpm install
+Run the application in development mode:
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```Bash
+pnpm  run dev
+The application should now be running locally, usually at http://localhost:5173.
+
 ```
+
+
+```Bash
+node -v
+pnpm -v
+
+```
+
+## 📝 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🤝 Contact 
+
+Project Link: [Click here](shop-co-kappa.vercel.app)
+
+Linkedin: [Click here](linkedin.com/in/caio-martins-2ba009207/)
+
+Email: Caiodevpro@gmail.com
