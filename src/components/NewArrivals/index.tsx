@@ -16,8 +16,11 @@ const NewArrivals: React.FC = () => {
       <div className={styles.cards}>
         {cardsData.map((card: Card) => (
           <div key={card.id} className={styles.card}>
-            <img src={card.image} alt={card.name} />
-
+            <img
+              src={card.image}
+              alt={card.name}
+              className={styles.image}
+            />
             <h3>{card.name}</h3>
 
             <div>
@@ -34,6 +37,7 @@ const NewArrivals: React.FC = () => {
           </div>
         ))}
       </div>
+
     </section>
   );
 };
