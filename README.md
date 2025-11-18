@@ -66,8 +66,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 🤝 Contact 
 
-Project Link: 
+Project Link: [Click here](shop-co-kappa.vercel.app)
 
-Linkedin:
+Linkedin: [Click here](linkedin.com/in/caio-martins-2ba009207/)
 
 Email: Caiodevpro@gmail.com
