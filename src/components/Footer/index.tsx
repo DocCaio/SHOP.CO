@@ -54,16 +54,18 @@ const Footer = () => {
           ))}
         </div>
 
-        <div className={styles.bottom}>
-          <span className={styles.copy}>Shop.co © 2000–2025, All Rights Reserved</span>
-          <ul className={styles.payments}>
-            {payCards.map((pay, index) => (
-              <li key={index}>
-                <img src={pay.src} alt={pay.alt} />
-              </li>
-            ))}
-          </ul>
-        </div>
+     <div className={styles.bottom}>
+        <span className={styles.copy}>
+     Shop.co © 2000–{new Date().getFullYear()}, All Rights Reserved
+  </span>
+   <ul className={styles.payments}>
+    {payCards.map((pay, index) => (
+      <li key={pay.alt || index}>
+        <img src={pay.src} alt={pay.alt} />
+      </li>
+    ))}
+  </ul>
+</div>
       </div>
     </footer>
   );
